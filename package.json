@@ -1,0 +1,76 @@
+{
+  "name": "biaude.org",
+  "version": "0.1.0",
+  "description": "Banque de données des zaloeils de dos",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets es2015,stage-2",
+    "build": "webpack --progress --colors --display-error-details",
+    "lint": "standard",
+    "doc": "apidoc -i api/ -o doc/",
+    "test": "nyc mocha --compilers js:babel-core/register test/**/*spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/am-initiatives/biaude.org.git"
+  },
+  "keywords": [
+    "biaude",
+    "gadzarts"
+  ],
+  "author": "Gullfaxi 171 Clun's 211",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/am-initiatives/biaude.org/issues"
+  },
+  "homepage": "https://github.com/am-initiatives/biaude.org#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "body-parser": "^1.15.2",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.6",
+    "moment": "^2.14.1",
+    "mongoosastic": "^4.0.2",
+    "mongoose": "^4.5.10",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "request": "^2.74.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-istanbul": "^0.11.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-module-alias": "^1.6.0",
+    "babel-plugin-webpack-alias": "^1.9.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0",
+    "webpack": "^1.13.2",
+    "webpack-node-externals": "^1.3.3"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "sites/",
+      "public/",
+      "node_modules/",
+      "bower_components/",
+      "services/is.email.service.js"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # Biaude.org
-Nouvelle du site Biaude.org, qui a pour objectif de mettre à disposition de la communauté les plus beaux zaloeils de dos (ou zados, selon les TBK)
+Nouvelle version du site Biaude.org, qui a pour objectif de mettre à disposition de la communauté les plus beaux zaloeils de dos (ou zados, selon les TBK)
 
 
 ## Build de l'application
@@ -49,3 +49,7 @@ v0.2.0
 v1.0.0
 - Fonctionnalités complètes d'affichage et de recherche
 - Gestion des administrateurs
+
+## Déploiement sur Debian
+
+Image Docker en cours de construction, contiendra NodeJS, Git, MongoDB, Nginx + Configuration
